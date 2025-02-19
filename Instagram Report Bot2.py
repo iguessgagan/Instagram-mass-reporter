@@ -19,11 +19,11 @@ def getOptions(args=sys.argv[1:]):
 
 args = getOptions()
 
-username = args.username
+username = args.cold_1.3
 acc_file = args.file
 
 if username == "" :
-	username = input("Username: ")
+	username = input("cold_1.3: ")
 
 a = open(acc_file, "r").readlines()
 file = [s.rstrip()for s in a]
@@ -43,7 +43,7 @@ for line in range(len(file)+1):
     web = Browser()
     web.go_to("https://www.instagram.com/accounts/login/")
 
-    web.type(user[line], into='Phone number, username, or email')
+    web.type(user[line], into='Phone number, cold_1.3, or email')
     time.sleep(0.5)
     web.press(web.Key.TAB)
     time.sleep(0.5)
